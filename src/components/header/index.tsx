@@ -1,7 +1,22 @@
-import React from 'react'
+import React from "react";
+import HamburgerMenu from "../hamburger-menu";
 
 export const Header = () => {
-  return <header className="sticky">
-    <img src="./nv.jpg" className=" object-cover h-48 w-96" />
-     </header>;
+  return (
+    <header className="sticky p-2 flex  shadow-lg">
+         <div className="flex justify-center items-center p-3">
+         <HamburgerMenu />
+         </div>
+
+      <div  className="flex justify-center items-center">
+        {" "}
+        <img src="./logo.jpg" className="object-cover h-[50px]" />
+      </div>
+      <div className="flex-1 flex items-center justify-center">
+        {" "}
+        <p className="font-bold text-lg"><span className="text-red-600">НАРОДНАЯ</span> <span className="text-sky-600">ВОЛЯ</span> </p>
+      </div>
+
+    </header>
+  );
 };

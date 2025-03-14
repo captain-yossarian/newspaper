@@ -10,9 +10,7 @@ export const AboutUsPage = () => {
           <PersonCard key={person.name} {...person} />
         ))}
        </div>
-       <div>
-        <img src="./ru.jpg" />
-       </div>
+    
       </div>
    );
 };

@@ -1,14 +1,26 @@
 export const NAV = [
   {
-    label: "Главная",
-    value: "/",
+    title: "Новости",
+    href: "/",
   },
   {
-    label: "О нас",
-    value: "/about-us",
+    title: "Руководители организации",
+    href: "/about-us",
   },
   {
-    label: "Манифест",
-    value: "/manifest",
+    title: "Карта",
+    href: "/karta",
+  },
+  {
+    title: "Пожертвование",
+    href: "/donates",
+  },
+  {
+    title: "Как вступить в организацию",
+    href: "/join",
+  },
+  {
+    title: "Манифест",
+    href: "/manifest",
   },
 ];
