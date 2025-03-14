@@ -14,10 +14,11 @@ import {
 } from "@/components/ui/collapsible"
 import { cn } from "@/lib/utils"
 import { NAV } from "@/constants/nav"
+import { Link } from "react-router-dom"
 
 type MenuItem = {
   title: string
-  href?: string
+  href: string
   submenu?: MenuItem[]
 }
  
@@ -53,8 +54,8 @@ const MenuItemComponent: React.FC<{ item: MenuItem; depth?: number }> = ({ item,
   }
  
   return (
-    <a
-      href={item.href}
+    <Link
+      to={item.href}
       className={cn(
 
         "rounded-lg hover:cursor-pointer hover:bg-blue-100 p-2 block py-2 text-lg font-medium transition-colors hover:text-primary",
@@ -63,7 +64,7 @@ const MenuItemComponent: React.FC<{ item: MenuItem; depth?: number }> = ({ item,
       )}
     >
       {item.title}
-    </a>
+    </Link>
   )
 }
 
