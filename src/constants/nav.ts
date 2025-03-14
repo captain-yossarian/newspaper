@@ -21,6 +21,6 @@ export const NAV = [
   },
   {
     title: "Манифест",
-    href: "/manifest",
+    href: "/manifest-doc",
   },
 ];

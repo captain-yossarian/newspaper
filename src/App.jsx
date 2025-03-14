@@ -82,7 +82,7 @@ const App = () => {
             }
           />
           <Route
-            path="/manifest"
+            path="/manifest-doc"
             element={
               <Page>
                 <ManifestPage />
