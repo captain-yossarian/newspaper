@@ -13,30 +13,28 @@ import { JoinPage } from "./pages/join";
 function Main() {
   return (
     <div className="flex flex-col gap-3 ">
-      <div >
+      <div>
         <Header />
       </div>
       <div className="flex flex-col md:flex-row justify-between ">
         <div className="hidden md:block">
           <Nav />
         </div>
-        <main className="flex w-full justify-center h-[calc(100vh-230px)]">
+        <main className="flex w-full justify-center h-[calc(100vh-210px)]">
           <Outlet />
         </main>
       </div>
-      <footer class="bg-gray-800 text-white py-6 h-[150px]">
+      <footer class="bg-gray-800 text-white py-6 ">
         <div class="container mx-auto text-center">
-          <p>&copy; 2025 Your Company. All rights reserved.</p>
-          <div class="mt-4">
-            <a href="#" class="text-gray-400 hover:text-white mx-3">
-              Privacy Policy
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white mx-3">
-              Terms of Service
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white mx-3">
-              Contact Us
-            </a>
+          <div class="mt-4 flex-col md:flex-row justify-center">
+            <div>
+              <a
+                href="http://t.me/narodnaya_vol_ya"
+                class="text-gray-400 hover:text-white mx-3 flex items-center gap-2 justify-center "
+              >
+                <img src="./tg.svg" width="32px" /> Мы в соцсетях
+              </a>
+            </div>
           </div>
         </div>
       </footer>
@@ -53,7 +51,7 @@ const App = () => {
             index
             element={
               <Page>
-                <MainPage />
+                <AboutUsPage />
               </Page>
             }
           />
