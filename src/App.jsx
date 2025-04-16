@@ -56,6 +56,14 @@ const App = () => {
             }
           />
           <Route
+            path="/novostu"
+            element={
+              <Page>
+             
+              </Page>
+            }
+          />
+          <Route
             path="/about-us"
             element={
               <Page>

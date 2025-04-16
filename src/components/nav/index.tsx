@@ -6,7 +6,7 @@ export const Nav = () => {
   const { pathname } = useLocation();
   return (
     <nav className="w-[300px] p-3 bg-white rounded-lg shadow-lg">
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2 mt-8">
         {NAV.map(({ title, href }) => (
           <li
             key={href}

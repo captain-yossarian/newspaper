@@ -1,5 +1,9 @@
 export const NAV = [ 
   {
+    title: "Новости",
+    href: "/novostu",
+  },
+  {
     title: "О нас",
     href: "/about-us",
   },
@@ -15,9 +19,9 @@ export const NAV = [
     title: "Помочь нашей организации",
     href: "/donates",
   },
-  {
-    title: "Как вступить в организацию",
-    href: "/join",
-  },
+  // {
+  //   title: "Как вступить в организацию",
+  //   href: "/join",
+  // },
 
 ];

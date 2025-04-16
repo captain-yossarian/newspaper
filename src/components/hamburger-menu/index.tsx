@@ -75,12 +75,12 @@ export default function HamburgerMenu() {
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu className="h-5 w-5" />
+          <Menu   size={32} />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-[240px] sm:w-[300px] p-3">
-        <nav className="flex flex-col space-y-1">
+        <nav className="flex flex-col space-y-1 mt-10">
           {NAV.map((item) => (
             <MenuItemComponent key={item.title} item={item} />
           ))}
