@@ -11,12 +11,12 @@ export const Header = () => {
         <HamburgerMenu />
       </div>
 
-      <div className="flex justify-center items-center cursor-pointer" onClick={() => navigate('/')}>
-           <img src="./logo.jpg" className="object-cover h-[80px] rounded-[100%]" />
-       </div>
+      <div className="md:inline-block hidden  justify-center items-center cursor-pointer" onClick={() => navigate('/')}>
+        <img src="./logo.jpg" className="object-cover h-[80px] rounded-[100%]" />
+      </div>
       <div className="flex-1 flex items-center justify-center">
         {" "}
-        <p className="font-bold text-5xl md:text-7xl">
+        <p className="font-bold text-2xl md:text-7xl">
           <span className="text-red-600">НАРОДНАЯ</span>{" "}
           <span className="text-sky-600">ВОЛЯ</span>{" "}
         </p>
