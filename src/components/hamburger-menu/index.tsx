@@ -21,7 +21,7 @@ type MenuItem = {
   href: string
   submenu?: MenuItem[]
 }
- 
+
 
 const MenuItemComponent: React.FC<{ item: MenuItem; depth?: number }> = ({ item, depth = 0 }) => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -52,7 +52,7 @@ const MenuItemComponent: React.FC<{ item: MenuItem; depth?: number }> = ({ item,
       </Collapsible>
     )
   }
- 
+
   return (
     <Link
       to={item.href}
@@ -73,11 +73,8 @@ export default function HamburgerMenu() {
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu   size={32} />
-          <span className="sr-only">Toggle menu</span>
-        </Button>
+      <SheetTrigger >
+        <Menu size={32} />
       </SheetTrigger>
       <SheetContent side="left" className="w-[240px] sm:w-[300px] p-3">
         <nav className="flex flex-col space-y-1 mt-10">
